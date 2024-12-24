@@ -3,7 +3,7 @@ module.exports = {
   content: [
     './*.html', // يشمل جميع ملفات HTML
     './js/*.js',   // يشمل جميع ملفات JavaScript
-    './**/*.css',  // يشمل جميع ملفات CSS
+    './css/*.css',  // يشمل جميع ملفات CSS
   ],
   theme: {
     extend: {
