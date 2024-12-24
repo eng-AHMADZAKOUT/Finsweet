@@ -28,20 +28,52 @@
       <div class="w-11/12 mx-auto">
         <nav class="flex items-center justify-between py-9">
           <a href=""><img src="imgs/Logo.png" alt="logo" /></a>
-          <!-- side bar -->
-          <div class="md:hidden">
-            <i class="text-white fa-solid fa-bars"></i>
-            <!-- <ul
-              class="absolute top-0 flex-col w-1/4 p-5 -right-3/4 bg-slate-800"
+
+          <div class="relative">
+            <button
+              id="openSidebar"
+              class="text-white focus:outline-none md:hidden"
             >
-              <li><a href="#">home</a></li>
-              <li><a href="#">home</a></li>
-              <li><a href="#">home</a></li>
-              <li><a href="#">home</a></li>
-              <li><a href="#">home</a></li>
-              <li><a href="#">home</a></li>
-            </ul> -->
+              <i class="text-xl fas fa-bars"></i>
+            </button>
+
+            <div
+              id="sidebar"
+              class="fixed top-0 right-0 z-50 w-64 h-full text-white transition-transform duration-300 transform translate-x-full bg-[#1C1E53]"
+            >
+              <button
+                id="closeSidebar"
+                class="absolute px-2 py-1 mb-4 text-gray-800 bg-white rounded-md top-2 right-4 focus:outline-none"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="mt-10 space-y-4">
+                <li>
+                  <a href="index.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="aboutUs.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
+
           <!-- nav bar -->
           <div class="hidden md:block">
             <ul class="md:gap-4 md:flex">
@@ -752,37 +784,17 @@
         plusBtn.classList.remove("hidden"); // إظهار زر +
       });
     });
-    // // تحديد عناصر الصفحة
-    // // تحديد عناصر الصفحة
-    // // تحديد عناصر الصفحة
-    // const sectionsOne = document.querySelectorAll(".sectionOne"); // جلب جميع العناصر التي تحمل الكلاس sectionOne
-    // const sectionTwo = document.querySelector(".sectionTwo"); // جلب القسم الثاني
-    // const showSectionOne = document.getElementById("showSectionOne");
-    // const showSectionTwo = document.getElementById("showSectionTwo");
 
-    // // إظهار كل عناصر sectionOne وإخفاء sectionTwo
-    // showSectionOne.addEventListener("click", () => {
-    //   sectionsOne.forEach((section) => {
-    //     section.classList.remove("hidden"); // إظهار العنصر
-    //     section.classList.add("block"); // تحويل العنصر إلى block
-    //   });
+    const openSidebar = document.getElementById("openSidebar");
+    const closeSidebar = document.getElementById("closeSidebar");
+    const sidebar = document.getElementById("sidebar");
 
-    //   sectionTwo.classList.remove("block"); // إخفاء القسم الثاني
-    //   sectionTwo.classList.add("hidden"); // إخفاء القسم الثاني
-    // });
+    openSidebar.addEventListener("click", () => {
+      sidebar.classList.remove("translate-x-full"); // إظهار القائمة من اليمين
+    });
 
-    // // إظهار sectionTwo وإخفاء كل عناصر sectionOne
-    // showSectionTwo.addEventListener("click", () => {
-    //   sectionsOne.forEach((section) => {
-    //     section.classList.remove("block"); // إخفاء العنصر
-    //     section.classList.add("hidden");
-    //     // تحويل العنصر إلى hidden
-    //   });
-
-    //   sectionTwo.classList.remove("hidden"); // إظهار القسم الثاني
-    //   sectionTwo.classList.add("block");
-    //   sectionTwo.classList.remove("text-[#BBBBCB]");
-    //   sectionTwo.classList.add("text-white"); // تحويل القسم الثاني إلى block
-    // });
+    closeSidebar.addEventListener("click", () => {
+      sidebar.classList.add("translate-x-full"); // إخفاء القائمة إلى اليمين
+    });
   </script>
 </html>
