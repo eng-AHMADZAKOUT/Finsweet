@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finsweet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0, 400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1, 900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta
+      name="description"
+      content="Building stellar websites for early startups."
+    />
+    <meta
+      name="keywords"
+      content="web design, startups, Tailwind CSS, responsive design"
+    />
+    <meta name="author" content="eng ahmad zaqout" />
+
+    <link rel="shortcut icon" href="imgs/bx-code-alt.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+  <body>
+    <header class="bg-[#1C1E53]">
+      <div class="w-11/12 mx-auto">
+        <nav class="flex items-center justify-between py-9">
+          <a href=""><img src="imgs/Logo.png" alt="logo" /></a>
+
+          <div class="relative">
+            <button
+              id="openSidebar"
+              class="text-white focus:outline-none md:hidden"
+            >
+              <i class="text-xl fas fa-bars"></i>
+            </button>
+
+            <div
+              id="sidebar"
+              class="fixed md:hidden top-0 right-0 z-50 w-64 h-full text-white transition-transform duration-300 transform translate-x-full shadow-2xl border border-solid border-gray-50/5 bg-[#1e1f52]"
+            >
+              <button
+                id="closeSidebar"
+                class="absolute px-2 py-1 mb-4 text-gray-800 bg-white rounded-md top-2 right-4 focus:outline-none"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="mt-10 space-y-4">
+                <li>
+                  <a href="index.html" class="block px-4 py-2 hover:bg-gray-700"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="aboutUs.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="Features.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="Pricing.html"
+                    class="block px-4 py-2 hover:bg-gray-700"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700">FAQ</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700">Blog</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700"
+                    >Contact us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- nav bar -->
+          <div class="hidden md:block">
+            <ul class="md:gap-4 md:flex">
+              <li>
+                <a href="index.html" class="font-medium text-[#BBBBCB]">Home</a>
+              </li>
+              <li>
+                <a href="aboutUs.html" class="font-medium text-[#BBBBCB]"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a href="Features.html" class="text-[#BBBBCB] font-medium"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="Pricing.html" class="font-medium text-white"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-[#BBBBCB] font-medium">FAQ</a>
+              </li>
+              <li>
+                <a href="#" class="text-[#BBBBCB] font-medium">Blog</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-[#BBBBCB] font-medium rounded-[40px] border-solid border-2 border-#F4F6FC/[.02] px-4 py-1"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="w-11/12 mx-auto py-28">
+        <div class="relative">
+          <div
+            class="absolute -mt-[25%] z-50 w-[1151px] h-[1151px] -translate-x-1/2 -translate-y-1/2 bg-white/5 rounded-[100%] top-1/2 left-1/2"
+          ></div>
+          <h2 class="mb-4 text-5xl font-bold text-center text-[#282938]">
+            Our Pricing Plans
+          </h2>
+          <p class="text-center text-[#282938]/70">
+            When you’re ready to go beyond prototyping in Figma, Webflow is
+            <br />
+            ready to help you bring your designs to life — without coding them.
+          </p>
+          <div class="grid grid-cols-1 gap-8 mt-16 md:grid-cols-3">
+            <div class="px-12 py-16 bg-[#F4F6FC] rounded-xl shadow-xl">
+              <h3 class="pb-5 text-[#2405F2]">
+                <span
+                  class="text-4xl leading-[56px] text-[#282938] mr-2 font-semibold"
+                  >$299</span
+                >
+                Per Design
+              </h3>
+              <h4 class="pb-2 text-[#282938] text-2xl leading-9 font-medium">
+                Landing Page
+              </h4>
+              <p class="text-[#282938]/70 leading-7">
+                When you’re ready to go beyond prototyping in Figma,
+              </p>
+              <ul class="mt-20">
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">All limited links</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">Own analytics platform</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">Chat support</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#282938]/70 text-3xl"
+                  ></i>
+                  <p class="text-[#282938]/70 leading-7">Optimize hashtags</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#282938]/70 text-3xl"
+                  ></i>
+                  <p class="text-[#282938]/70 leading-7">Unlimited users</p>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="block mt-20 text-center bg-[#282938] text-white py-4 px-20 rounded-[41px]"
+                >Get started</a
+              >
+            </div>
+            <div class="px-12 py-16 bg-[#1C1E53] rounded-xl shadow-2xl">
+              <h3 class="pb-5 text-[#FCD980]">
+                <span
+                  class="text-4xl leading-[56px] mr-2 text-[#fff] font-semibold"
+                  >$399</span
+                >Multi Design
+              </h3>
+              <h4 class="pb-2 text-2xl font-medium leading-9 text-white">
+                Website Page
+              </h4>
+              <p class="leading-7 text-white/70">
+                When you’re ready to go beyond prototyping in Figma, Webflow’s
+                <br />
+                ready to help.
+              </p>
+              <ul class="mt-[50px]">
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="leading-7 text-white">All limited links</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="leading-7 text-white">Own analytics platform</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="leading-7 text-white">Chat support</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="leading-7 text-white">Optimize hashtags</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="leading-7 text-white">Unlimited users</p>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="block mt-20 text-center bg-[#FCD980] text-[#282938] py-4 px-20 rounded-[41px]"
+                >Get started</a
+              >
+            </div>
+            <div class="px-12 py-16 bg-[#F4F6FC] rounded-xl shadow-xl">
+              <h3 class="pb-5 text-[#2405F2]">
+                <span
+                  class="text-4xl leading-[56px] mr-2 text-[#282938] font-semibold"
+                  >$499+</span
+                >Per Design
+              </h3>
+              <h4 class="pb-2 text-[#282938] text-2xl leading-9 font-medium">
+                Complex Project
+              </h4>
+              <p class="text-[#282938]/70 leading-7">
+                When you’re ready to go beyond prototyping in Figma,
+              </p>
+              <ul class="mt-11">
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">All limited links</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">Own analytics platform</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">Chat support</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">Optimize hashtags</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">Unlimited users</p>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i
+                    class="mr-2 fa-solid fa-caret-right text-[#97DAAD] text-3xl"
+                  ></i>
+                  <p class="text-[#282938] leading-7">Assist and Help</p>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="block mt-20 text-center bg-[#282938] text-white py-4 px-20 rounded-[41px]"
+                >Contact us</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-28">
+      <div class="bg-[#1C1E53]">
+        <div class="w-11/12 mx-auto">
+          <div
+            class="relative grid grid-cols-1 md:grid-cols-2 gap-8 py-[96px] px-10"
+          >
+            <div class="">
+              <img src="imgs/Logo.png" alt="" />
+              <p class="mt-6 font-light text-white/70 mb-14">
+                We are always open to discuss your project and <br />
+                improve your online presence.
+              </p>
+              <div
+                class="grid grid-cols-2 gap-8 absolute bottom-0 ml-10 left-0 p-2 bg-[#FCD980]"
+              >
+                <div class="mr-2">
+                  <p class="pb-2 text-[#282938] text-sm font-medium">
+                    Email me at
+                  </p>
+                  <a
+                    class="text-[#282938] text-sm font-light"
+                    href="mailto:contact@website.com"
+                    >contact@website.com</a
+                  >
+                </div>
+                <div class="mr-2">
+                  <p class="pb-2 text-[#282938] text-sm font-medium">Call us</p>
+                  <a
+                    class="text-[#282938] text-sm font-light"
+                    href="tel:+0927 6277 28525"
+                    >0927 6277 28525</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="text-4xl text-white">Lets Talk!</p>
+              <p class="py-4 text-white/70">
+                We are always open to discuss your project,<br />
+                improve your online presence and help with your <br />
+                UX/UI design challenges.
+              </p>
+
+              <i class="mr-4 text-lg text-white fa-brands fa-facebook"></i>
+              <i class="mr-4 text-lg text-white fa-brands fa-twitter"></i>
+              <i class="mr-4 text-lg text-white fa-brands fa-instagram"></i>
+              <i class="mr-4 text-lg text-white fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-11/12 mx-auto">
+        <div class="flex flex-col p-4 md:justify-between md:flex-row">
+          <p class="text-xs md:text-lg">Copyright 2024, Finsweet.com</p>
+
+          <div>
+            <ul class="flex pt-3 text-xs md:gap-4">
+              <li class="mr-[6px]">
+                <a
+                  href="index.html"
+                  id="showSectionOne"
+                  class="font-medium text-[#282938]"
+                  >Home</a
+                >
+              </li>
+              <li class="mr-[6px]">
+                <a
+                  href="aboutUs.html"
+                  id="showSectionTwo"
+                  class="font-medium text-[#282938]"
+                  >About us</a
+                >
+              </li>
+              <li class="mr-[6px]">
+                <a href="#" class="text-[#282938] font-medium">Features</a>
+              </li>
+              <li class="mr-[6px]">
+                <a href="Pricing.html" class="text-[#9093c9] font-medium"
+                  >Pricing</a
+                >
+              </li>
+              <li class="mr-[6px]">
+                <a href="#" class="text-[#282938] font-medium">FAQ</a>
+              </li>
+              <li class="mr-[6px]">
+                <a href="#" class="text-[#282938] font-medium">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const openSidebar = document.getElementById("openSidebar");
+      const closeSidebar = document.getElementById("closeSidebar");
+      const sidebar = document.getElementById("sidebar");
+
+      openSidebar.addEventListener("click", () => {
+        sidebar.classList.remove("translate-x-full"); // إظهار القائمة من اليمين
+      });
+
+      closeSidebar.addEventListener("click", () => {
+        sidebar.classList.add("translate-x-full"); // إخفاء القائمة إلى اليمين
+      });
+    </script>
+  </body>
+</html>
