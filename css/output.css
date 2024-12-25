@@ -830,6 +830,10 @@ video {
   margin-right: 9px;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -1475,6 +1479,11 @@ video {
   padding-right: 6rem;
 }
 
+.px-56 {
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1770,6 +1779,10 @@ video {
   color: rgb(40 41 56 / 0.8);
 }
 
+.text-\[\#282938\]\/90 {
+  color: rgb(40 41 56 / 0.9);
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2018,6 +2031,11 @@ video {
   .md\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .md\:px-56 {
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
 
   .md\:text-left {
