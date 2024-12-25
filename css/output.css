@@ -668,6 +668,16 @@ video {
   margin-bottom: 6rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -800,6 +810,26 @@ video {
   margin-top: 8rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mr-\[9px\] {
+  margin-right: 9px;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -872,6 +902,10 @@ video {
   height: 24rem;
 }
 
+.h-\[5px\] {
+  height: 5px;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -916,6 +950,18 @@ video {
   width: 1151px;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-\[5px\] {
+  width: 5px;
+}
+
 .border-collapse {
   border-collapse: collapse;
 }
@@ -953,6 +999,10 @@ video {
   resize: both;
 }
 
+.list-disc {
+  list-style-type: disc;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -979,6 +1029,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .place-items-center {
@@ -1041,6 +1095,10 @@ video {
   gap: 1.75rem;
 }
 
+.gap-\[9px\] {
+  gap: 9px;
+}
+
 .gap-y-12 {
   row-gap: 3rem;
 }
@@ -1101,6 +1159,18 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1139,6 +1209,10 @@ video {
 
 .border-white\/25 {
   border-color: rgb(255 255 255 / 0.25);
+}
+
+.border-b-\[1\] {
+  border-bottom-color: 1;
 }
 
 .bg-\[\#1C1E53\] {
@@ -1396,6 +1470,11 @@ video {
   padding-right: 68px;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1517,6 +1596,10 @@ video {
   font-size: 38px;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1563,6 +1646,10 @@ video {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-\[\#1B1C2B\] {
@@ -1677,6 +1764,10 @@ video {
 
 .text-\[\] {
   color: ;
+}
+
+.text-\[\#282938\]\/80 {
+  color: rgb(40 41 56 / 0.8);
 }
 
 .underline {
@@ -1918,6 +2009,15 @@ video {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-\[9px\] {
+    gap: 9px;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:text-left {
