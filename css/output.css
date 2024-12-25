@@ -634,6 +634,10 @@ video {
   z-index: 50;
 }
 
+.z-\[999\] {
+  z-index: 999;
+}
+
 .-order-1 {
   order: -1;
 }
@@ -775,6 +779,10 @@ video {
   margin-top: -15%;
 }
 
+.box-content {
+  box-sizing: content-box;
+}
+
 .block {
   display: block;
 }
@@ -833,6 +841,14 @@ video {
 
 .h-\[1151px\] {
   height: 1151px;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-96 {
+  height: 24rem;
 }
 
 .w-11 {
