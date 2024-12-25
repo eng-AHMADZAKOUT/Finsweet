@@ -1912,6 +1912,14 @@ video {
     gap: 1rem;
   }
 
+  .md\:gap-7 {
+    gap: 1.75rem;
+  }
+
+  .md\:gap-8 {
+    gap: 2rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
